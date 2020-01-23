@@ -8,12 +8,11 @@ Tres-Commas! Create products, send them to mass market, and, of course, buy as m
 
 ### ERD:
 
-![](https://www.lucidchart.com/documents/edit/24b2a5f7-539b-46e9-a315-bacf31d57aee)
+![](https://i.imgur.com/PhAdOeq.png)
 
 ### Deployed Link:
 
-Coming soon...
-[Tres-Commas]()
+[Tres-Commas](https://trescommas.herokuapp.com/)
 
 ### Github Link:
 
@@ -45,3 +44,5 @@ Coming soon...
     *Timers, random events
     <br>
     *Scoreboards
+    <br>
+    *Company creator
