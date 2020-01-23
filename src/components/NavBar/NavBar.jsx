@@ -18,6 +18,8 @@ const NavBar = (props) => {
       &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
       <Link to='/profile' className='btn btn-primary'>PROFILE</Link>
       &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+      <Link to='/about' className='btn btn-info'>ABOUT</Link>
+      &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
       <Link to='' className='btn btn-danger' onClick={props.handleLogout} >LOGOUT</Link>
       <p className='NavBar-welcome'>Welcome back, {props.user.name}!</p>
     </div>

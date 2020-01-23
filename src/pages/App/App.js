@@ -4,6 +4,8 @@ import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
 import userService from '../../utils/userService';
 import HomePage from '../HomePage/HomePage';
+import AboutPage from '../AboutPage/AboutPage';
+import ProfilePage from '../ProfilePage/ProfilePage';
 import CartPage from '../CartPage/CartPage';
 import * as productAPI from '../../services/products-api';
 import ProductListPage from '../../pages/ProductListPage/ProductListPage';
@@ -78,6 +80,18 @@ class App extends Component {
 
         <div className="leftpage">
           <Switch>
+          <Route exact path='/profile' render={() =>
+              <ProfilePage
+                handleLogout={this.handleLogout}
+                user={this.state.user}
+              />
+          }/>
+          <Route exact path='/About' render={() =>
+              <AboutPage
+                handleLogout={this.handleLogout}
+                user={this.state.user}
+              />
+            }/>
             <Route exact path='/' render={() =>
               <HomePage
                 handleLogout={this.handleLogout}
