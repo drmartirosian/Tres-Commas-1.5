@@ -8,7 +8,7 @@ import '../../pages/App/App.css';
 const NavBar = (props) => {
   let nav = props.user ?
     <div >
-      <Link to='/' className='btn NavBar-link'><img style={{marginTop:"5px", height:30, width: 30, borderRadius: "20%"}} src="https://i.imgur.com/Amry0RH.png" alt="" /></Link>
+      <Link to='/' className='btn NavBar-link'><img className="homelink" src="https://i.imgur.com/Amry0RH.png" alt="" /></Link>
       &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
       <Link exact to='/market' className='NavBar-link'>MARKET</Link>
       &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
