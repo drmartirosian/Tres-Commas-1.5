@@ -8,8 +8,8 @@ router.get('/:id', productsCtrl.show);
 router.post('/', productsCtrl.create);
 
 /*---------- Protected Routes ----------*/
-router.delete('/:id', productsCtrl.delete);
-router.put('/:id', productsCtrl.update);
+router.delete('/:id', /*checkAuth,*/ productsCtrl.delete);
+router.put('/:id', /*checkAuth,*/ productsCtrl.update);
 
 module.exports = router;
 

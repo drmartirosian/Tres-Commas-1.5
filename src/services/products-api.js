@@ -1,4 +1,6 @@
+import tokenService from '../utils/tokenService';
 const BASE_URL = '/api/products';
+
 
 export function getAll() {
   return fetch(BASE_URL)
@@ -8,7 +10,10 @@ export function getAll() {
 export function create(prod) {
   return fetch(BASE_URL, {
     method: 'POST',
-    headers: {'content-type': 'application/json'},
+    headers: {
+      'content-type': 'application/json',
+      'Authorization': 'Bearer ' + tokenService.getToken()
+    },
     body: JSON.stringify(prod)
   }).then(res => res.json());
 }
@@ -26,4 +31,14 @@ export function deleteOne(id) {
     method: 'DELETE'
   }).then(res => res.json());
 }
-
+// export function deleteOne(id) {
+//   const x = {
+//     method: 'DELETE',
+//     headers: {
+//       'Content-type': 'application/json',
+//       'Authorization': 'Bearer ' + tokenService.getToken()
+//     },
+//     body: JSON.stringify(id)
+//   };
+//   return fetch(`${BASE_URL}/${id}`, x).then(res => res.json());
+// }

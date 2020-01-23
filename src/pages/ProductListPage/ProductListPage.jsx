@@ -1,6 +1,6 @@
 import React from 'react';
-import './ProductListPage.css';
 import ProductListItem from '../../components/ProductListItem/ProductListItem';
+import './ProductListPage.css';
 
 function ProductListPage(props) {
   return (
