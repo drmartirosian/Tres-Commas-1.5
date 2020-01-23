@@ -4,6 +4,7 @@ import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
 import userService from '../../utils/userService';
 import HomePage from '../HomePage/HomePage';
+import SecretPage from '../SecretPage/SecretPage';
 import AboutPage from '../AboutPage/AboutPage';
 import ProfilePage from '../ProfilePage/ProfilePage';
 import CartPage from '../CartPage/CartPage';
@@ -82,6 +83,12 @@ class App extends Component {
           <Switch>
           <Route exact path='/profile' render={() =>
               <ProfilePage
+                handleLogout={this.handleLogout}
+                user={this.state.user}
+              />
+          }/>
+          <Route exact path='/secret' render={() =>
+              <SecretPage
                 handleLogout={this.handleLogout}
                 user={this.state.user}
               />
